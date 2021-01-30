@@ -165,7 +165,7 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 9. Next objective will be what is the purpose of the port means how doe the tool know that A is input port and Y is output port, VPWR is power and VGND is ground these definition has to be done using **port class and ort use**.
 10.Now extract the LEF file and plug this file the the design file.
 11. In the Openlane Flow we need to include our custom cell and 1st stage in OpenLane is snythesis the ABC flo of the synthesis mst ma the netlist to the cells int he library so we need to have the libray which our cell definition for synthesis.
-12. Before synthesis add and merge the LEF files
+12. Before synthesis add and merge the LEF files</br>
 ./flow.tcl -interactive</br>
 package require openlane 0.9</br>
 prep -design picorv32a  -tay Day2 -overwrite</br>
@@ -178,8 +178,17 @@ Slack | tns (total negative slack) | wns (worst negative slack)|
 |:---:|:---:|:---:|
 |-17.96|-2593.43|-17.96|
 
+12. Configure the Synthesis setting to fix the slack</br>
+So after synthesis set follwoing parameters</br>
+SYNTH_STRATEGY = 1</br>
+SYNTH_BUFFERING = 1</br>
+SYNTH_SIZING = 1</br>
+SYNTH-DRIVING_CELL = sky130_fd_sc_hd_inv8</br>
+rn_synthesis again and observe the slack as below ( has a hude improvement )</br>
 
-
+Slack | tns (total negative slack) | wns (worst negative slack)|
+|:---:|:---:|:---:|
+|-3.17|-36.81|-3.17|
 
 Day5 : RTL2GDS using TritonRoute and OpenSTA
 
