@@ -22,6 +22,7 @@ Also we will be using OpenSource tool known as OpenLANE which is an automated RT
 
 
 
+
 Day2 : Floorplan and Library Cells
 
 Day3 : Design Library Cell using Magic Layout and ngSpice Characterization.
