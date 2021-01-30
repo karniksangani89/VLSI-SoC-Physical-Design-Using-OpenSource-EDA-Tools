@@ -29,7 +29,7 @@ Place and Route (PnR) is the core of any ASIC implementation and Openlane flow i
    * Generating the power distribution network (pdn).
 * Placement
    * Performing global placement (RePLace).
-   * Perfroming detailed placement to legalize the globally placed components (OpenDP).
+   * Performing detailed placement to legalize the globally placed components (OpenDP).
 * Clock Tree Synthesis (CTS)
    * Synthesizing the clock tree (TritonCTS).
 * Routing
@@ -58,6 +58,16 @@ Below is the simplified RTL to GDSII flow
   * Tuned for Skywater 130nm Open PDK.
   
   **DAY1_LAB** 
+  
+  Main Objective : The goal of the project is to design a single height standard cell and plug this custom cell into a more complex design and perform it's PnR in the openlane flow. The standard cell chosen is a basic CMOS inverter and the design into which it's plugged into is a pre-built picorv32a core.
+  
+PicoRV32 is a CPU core that implements the RISC-V RV32IMC Instruction Set. It can be configured as RV32I, RV32IC, RV32IM, or RV32IMC core; where the suffixes stand for:
+
+M - Multiply extension
+I - Base Integer Instructions
+C - Compressed Instructions
+PicoRV32 is free and open hardware licensed under the ISC license.
+
   * OpenLANE directory structure in detail.
   * Design preparation step using following commands</br>
     ./flow.tcl -interactive : which opens OPENLANE</br>
@@ -137,7 +147,14 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 ![](Blogs4p-Rep/D32.jpg)
 ![](Blogs4p-Rep/D34.jpg)
 
-Day4 : PreLayout Timing Analysis and Clock Tree Synthesis.
+**Day4 : PreLayout Timing Analysis and Clock Tree Synthesis:**
+
+1. We convert grid info into the trac info
+2. To include the standard cell into the design we dont require PWR, GND, Port information, Logic part.
+3. The only information we require is inner boundary of the cell, PWR  GND and Inut and Output Port.
+4. LEF 9 Library Echange format) comes into picture  LEF file has these information.
+5. LEF file protect the IP's logic.
+
 
 Day5 : RTL2GDS using TritonRoute and OpenSTA
 
