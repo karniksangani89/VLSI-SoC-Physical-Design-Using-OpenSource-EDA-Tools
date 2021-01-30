@@ -74,7 +74,9 @@ Below is the simplified RTL to GDSII flow
 
 **Day2 : Floorplan and Library Cells**
 
-In this labe follwoing were the stage :
+**DAY2_LAB**
+
+In this lab follwoing were the stage :
 * Stage 1 : 
     * Data preparation stage :</br>
        Open Openlane </br>
@@ -82,7 +84,7 @@ In this labe follwoing were the stage :
        How to check and set the parameters such as CLOCK PERIOD on fl</br>
        To run_synthesis</br>
        
-* Stage 2 :
+* Stage 2 : Floorlan </br>
      * To read switches varaibles in floorlan.tcl file </br>
        To  set the IO mode </br>
        To knowwhich file is give the priority in terms to set the varaibles (Highest Priority to SKy130A file second Priority to Config.tcl file and lowest priority to floorplan.tcl file located in Openlan_flow/configuration </br>
@@ -95,7 +97,6 @@ Observation in Floorplan : </br>
 3. We can observe decap cells at the peripheral of the IO pins
 4. We can also observe tap cells : used to avoid latch upconditions in CMOS devices.
 5. Standard Cells are located at the lower left corner
-
 
 * Stage 3 : Placement </br>
     * run_placement
