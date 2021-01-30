@@ -128,6 +128,8 @@ Observation in Floorplan : </br>
 
 **Day3 : Design Library Cell using Magic Layout and ngSpice Characterization:**
 
+**DAY3_LAB**
+
 In this lab we clone the CMOS Inverter from vsdstdcelldesign</br>
 We check the layot of the design with resect to NMOS MOS and its connections with the metal layers.</br>
 Then we extract the ngsice netlist</br>
@@ -157,7 +159,11 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 5. LEF file protect the IP's logic.
 6. For PnR we need to make follwoing guidelines to make the Standard cell set
   * Input and Output ports must lie on the intersection of vertical and horizontal tracks.
-  * The width of the standard cell shold be odd multiple of track horizontal pitch and height should be odd multiple of track vertical pitch
+  * The width of the standard cell shold be odd multiple of track horizontal pitch and height should be odd multiple of track vertical pitch.
+7.Converge grid definition to track definition.
+8.Define the Ports  as pins of the macro.
+9. Next objective will be what is the purpose of the port means how doe the tool know that A is input port and Y is output port, VPWR is power and VGND is ground these definition has to be done using **port class and ort use**.
+10.Now extract the LEF file and plug this file the the design file.
 
 
 Day5 : RTL2GDS using TritonRoute and OpenSTA
