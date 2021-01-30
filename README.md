@@ -1,6 +1,6 @@
 # VLSI-SoC-Physical-Design-Using-OpenSource-EDA-Tools
 
-Day1 : Inception of Open Source EDA, OpenLANE and SKY130 PDK :
+**Day1 : Inception of Open Source EDA, OpenLANE and SKY130 PDK :**
 
 ![](Blogs4p-Rep/Soc.jpg)
 
