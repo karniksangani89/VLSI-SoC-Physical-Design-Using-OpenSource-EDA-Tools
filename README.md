@@ -172,7 +172,7 @@ prep -design picorv32a  -tay Day2 -overwrite</br>
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]</br>
 add_lefs -src $lefs</br>
 run_sythesis</br>
-Once we run the synthesis we can observe the huge slack</br>>
+Once we run the synthesis we can observe the huge slack</br>
 Slack | tns totla negative slack) | wns (worst negative slack)|
 |:---:|:---:|:---:|
 |-17.96|-2593.43|-17.96|
