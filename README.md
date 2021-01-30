@@ -236,13 +236,41 @@ We can observe following Setp Time and Hold Time</br>
 
 Setup Slack | Hold Slack | 
 |:---:|:---:|
-|-3.6287|-1.196|
+|-2.70|-1.196|
+
+19.Hold Slack and Setup Slack has to be rectified</br>
+The analysis performed is incorrect because we have built the clock tree for Tyical corner and the library which we are using the MIN and MAX lirary for MIN and MAX corner</br>
+We need to inculde libraries for the tyical analysis.</br>
+Once we perform that we get positive Setu Slack and postiive Hold slack
 
 
+Setup Slack | Hold Slack | 
+|:---:|:---:|
+|2.8469|0.2547|
+
+Thus for the Typical Corner both are meet.
 
 
-
-
+![](Blogs4p-Rep/D41.jpg)
+![](Blogs4p-Rep/D42.jpg)
+![](Blogs4p-Rep/D43.jpg)
+![](Blogs4p-Rep/D44.jpg)
+![](Blogs4p-Rep/425.jpg)
+![](Blogs4p-Rep/D46.jpg)
+![](Blogs4p-Rep/D47.jpg)
+![](Blogs4p-Rep/D48.jpg)
+![](Blogs4p-Rep/D49.jpg)
+![](Blogs4p-Rep/D400.jpg)
+![](Blogs4p-Rep/D401.jpg)
+![](Blogs4p-Rep/D402.jpg)
+![](Blogs4p-Rep/D403.jpg)
+![](Blogs4p-Rep/D404.jpg)
+![](Blogs4p-Rep/D405.jpg)
+![](Blogs4p-Rep/D406.jpg)
+![](Blogs4p-Rep/D407.jpg)
+![](Blogs4p-Rep/D408.jpg)
+![](Blogs4p-Rep/D409.jpg)
+![](Blogs4p-Rep/D4000.jpg)
 
 Day5 : RTL2GDS using TritonRoute and OpenSTA
 
