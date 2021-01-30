@@ -58,11 +58,11 @@ Below is the simplified RTL to GDSII flow
   * Tuned for Skywater 130nm Open PDK.
   
   **DAY1_LAB** 
-  OpenLANE directory structure in detail.
-  Design preparation step using following commands
-  ./flow.tcl -interactive : which opens OPENLANE
-  package require openlane 0.9
-  prep -design picorv32a
+  * OpenLANE directory structure in detail.
+  * Design preparation step using following commands
+    ./flow.tcl -interactive : which opens OPENLANE
+    package require openlane 0.9
+    prep -design picorv32a
   
   ![](Blogs4p-Rep/D11.jpg)
   ![](Blogs4p-Rep/D12.jpg)
