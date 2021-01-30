@@ -129,10 +129,13 @@ Characterized the cell using 4 parameters
 3. Fall Cell delay : It is difference between the time period the output falls to 50% and when input rise to 50%
 5. Rise Cell delay : It is difference between the time period the outut rise to 50% and when input falls to 50%
 
-Rise time delay | 0.06368nsec
-Fall Time delay | 0.42nsec
-Fall Cell delay | 0.028nsec
-Rise Cell delay | 0.06nsec
+Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
+|:---:|:---:|:---:|:---:|
+|0.06368nsec|0.042nsec|0.028nsec|0.06nsec|
+
+![](Blogs4p-Rep/D31.jpg)
+![](Blogs4p-Rep/D32.jpg)
+![](Blogs4p-Rep/D34.jpg)
 
 Day4 : PreLayout Timing Analysis and Clock Tree Synthesis.
 
