@@ -155,7 +155,7 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 1. We convert grid info into the track info
 2. To include the standard cell into the design we dont require PWR, GND, Port information, Logic part.
 3. The only information we require is inner boundary of the cell, PWR  GND and Inut and Output Port.
-4. LEF 9 Library Echange format) comes into picture  LEF file has these information.
+4. LEF (Library Echange format) comes into picture  LEF file has these information.
 5. LEF file protect the IP's logic.
 6. For PnR we need to make follwoing guidelines to make the Standard cell set
   * Input and Output ports must lie on the intersection of vertical and horizontal tracks.
@@ -164,6 +164,14 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 8.Define the Ports  as pins of the macro.
 9. Next objective will be what is the purpose of the port means how doe the tool know that A is input port and Y is output port, VPWR is power and VGND is ground these definition has to be done using **port class and ort use**.
 10.Now extract the LEF file and plug this file the the design file.
+11. In the Openlane Flow we need to include our custom cell and 1st stage in OpenLane is snythesis the ABC flo of the synthesis mst ma the netlist to the cells int he library so we need to have the libray which our cell definition for synthesis.
+12. Before synthesis add and merge the LEF files
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a  -tay Day2 -overwrite
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+
 
 
 Day5 : RTL2GDS using TritonRoute and OpenSTA
