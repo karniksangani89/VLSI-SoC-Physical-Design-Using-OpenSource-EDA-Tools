@@ -154,6 +154,9 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 3. The only information we require is inner boundary of the cell, PWR  GND and Inut and Output Port.
 4. LEF 9 Library Echange format) comes into picture  LEF file has these information.
 5. LEF file protect the IP's logic.
+6. For PnR we need to make follwoing guidelines to make the Standard cell set
+  * Input and Output ports must lie on the intersection of vertical and horizontal tracks.
+  * The width of the standard cell shold be odd multiple of track horizontal pitch and height should be odd multiple of track vertical pitch
 
 
 Day5 : RTL2GDS using TritonRoute and OpenSTA
