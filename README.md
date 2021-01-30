@@ -184,11 +184,37 @@ SYNTH_STRATEGY = 1</br>
 SYNTH_BUFFERING = 1</br>
 SYNTH_SIZING = 1</br>
 SYNTH-DRIVING_CELL = sky130_fd_sc_hd_inv8</br>
-rn_synthesis again and observe the slack as below ( has a hude improvement )</br>
+run_synthesis again and observe the slack as below ( has a hude improvement )</br>
 
 Slack | tns (total negative slack) | wns (worst negative slack)|
 |:---:|:---:|:---:|
-|-3.17|-36.81|-3.17|
+|-5.36|-356.06|-5.36|
+
+run_floorplan</br>
+run_placement</br>
+Open the Magic tool</br>
+
+13. Now we configure OpenSTA for post STA</br>
+If there is timing violatin we carry out analysis in separate tool</br>
+run sta for pre sta</br>
+We can observe similar results as above </br>
+
+Slack | tns (total negative slack) | wns (worst negative slack)|
+|:---:|:---:|:---:|
+|-5.36|-356.06|-5.36|
+
+14. Optimization of the Fanout value</br>
+After placement, set SYNTH_MAX_FANOUT = 4 </br>
+run_synthesis </br>
+
+Slack | tns (total negative slack) | wns (worst negative slack)|
+|:---:|:---:|:---:|
+|-3.76|-96.76|-3.76|
+
+15.
+
+
+
 
 Day5 : RTL2GDS using TritonRoute and OpenSTA
 
