@@ -63,23 +63,56 @@ Below is the simplified RTL to GDSII flow
     ./flow.tcl -interactive : which opens OPENLANE</br>
     package require openlane 0.9</br>
     prep -design picorv32a</br>
+    run_sythesis
+    
+    Design was selected and Synthesis was carried out.
   
   ![](Blogs4p-Rep/D11.jpg)
   ![](Blogs4p-Rep/D12.jpg)
   ![](Blogs4p-Rep/D13.jpg)
   ![](Blogs4p-Rep/D14.jpg)
-  
-  
-  
-            
+
+**Day2 : Floorplan and Library Cells**
+
+In this labe follwoing were the stage :
+* Stage 1 : 
+    * Data preparation stage :</br>
+       Open Openlane </br>
+       How to overwrite the file </br>
+       How to check and set the parameters such as CLOCK PERIOD on fl</br>
+       To run_synthesis</br>
+       
+* Stage 2 :
+     * To read switches varaibles in floorlan.tcl file </br>
+       To  set the IO mode </br>
+       To knowwhich file is give the priority in terms to set the varaibles (Highest Priority to SKy130A file second Priority to Config.tcl file and lowest priority to floorplan.tcl file located in Openlan_flow/configuration </br>
+       To run_floorplan </br>
+       To open Magic tool to observe the floorplan </br>
+       
+Observation in Floorplan : </br>
+1. Inuts and Outputs ins are equidistant </br>
+2. By selecting the Horizontal and vertical pin : we can come to know which metal layer it has</br>
+3. We can observe decap cells at the peripheral of the IO pins
+4. We can also observe tap cells : used to avoid latch upconditions in CMOS devices.
+5. Standard Cells are located at the lower left corner
 
 
+* Stage 3 : Placement </br>
+    * run_placement
 
-
-
-
-
-Day2 : Floorplan and Library Cells
+![](Blogs4p-Rep/D21.jpg)
+![](Blogs4p-Rep/D22.jpg)
+![](Blogs4p-Rep/D23.jpg)
+![](Blogs4p-Rep/D24.jpg)
+![](Blogs4p-Rep/D25.jpg)
+![](Blogs4p-Rep/D26.jpg)
+![](Blogs4p-Rep/D27.jpg)
+![](Blogs4p-Rep/D28.jpg)
+![](Blogs4p-Rep/D29.jpg)
+![](Blogs4p-Rep/D211.jpg)
+![](Blogs4p-Rep/D212.jpg)
+![](Blogs4p-Rep/D213.jpg)
+       
 
 Day3 : Design Library Cell using Magic Layout and ngSpice Characterization.
 
