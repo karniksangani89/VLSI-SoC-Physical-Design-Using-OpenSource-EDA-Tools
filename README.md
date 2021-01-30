@@ -275,5 +275,3 @@ Thus for the Typical Corner both are meet.
 Day5 : RTL2GDS using TritonRoute and OpenSTA
 
 
-
-
