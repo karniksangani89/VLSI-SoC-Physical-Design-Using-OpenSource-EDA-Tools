@@ -42,15 +42,15 @@ Below is the simplified RTL to GDSII flow
 
 ![](Blogs4p-Rep/RTL2GDS.jpg)
 
-Synthesis : Converts RTL to a circuit out of components from Standard Cell library (SCL). Standard Cells have regular layout fixed height width is varaible bt discrete.
-Floor and Power Planning : Objective here is to plan silicon are and create robust power distribtion network to power the circuit.
-Chip Floor Planning : artition the chip die between different system bilding blocks and place the IO pads.
-Macro Floor Planning : Macro Dimension, pin location and row definition.
-Power Planning : Power network is contructed with multiple VDD and GND lines, such parallel structures are meant to reduce the resistance and hence the IR drop. Uses upper metal layer and hence less resistance.
-Placement : lace the cells on the floorlan rows align with the sites, place close to each other to reduce inter-connect delay and also to enable sucessful routing.
-Clock Tree Sysnthesis (CTS) : Create a clock distribution network  to deliver the clock to all sequential elements with minimm skew.
-Routing : Implement the interconnect using available metal layer. Usally done in 2 steps Global Routing and Detailed Routing.
-Sign-off : Physical Verification is carried out sing DRC ( Deisgn Rule Check ) and LVS (Layot verus Schematic ) Check  during this timing verification STA Static Timing Analayis is also carried out.
+* Synthesis : Converts RTL to a circuit out of components from Standard Cell library (SCL). Standard Cells have regular layout fixed height width is varaible but discrete.
+* Floor and Power Planning : Objective here is to plan silicon area and create robust power distribtion network to power the circuit.
+* Chip Floor Planning : Partition the chip die between different system building blocks and place the IO pads.
+* Macro Floor Planning : Macro Dimension, pin location and row definition.
+* Power Planning : Power network is contructed with multiple VDD and GND lines, such parallel structures are meant to reduce the resistance and hence the IR drop. Uses upper metal layer and hence less resistance.
+* Placement : Place the cells on the floorlan rows align within the sites, place close to each other to reduce inter-connect delay and also to enable sucessful routing.
+* Clock Tree Sysnthesis (CTS) : Create a clock distribution network to deliver the clock to all sequential elements with minimum skew.
+* Routing : Implement the interconnect using available metal layer. Usually done in 2 steps Global Routing and Detailed Routing.
+* Sign-off : Physical Verification is carried out sing DRC ( Deisgn Rule Check ) and LVS (Layot verus Schematic ) Check  during this timing verification STA Static Timing Analayis is also carried out.
             
 
 
