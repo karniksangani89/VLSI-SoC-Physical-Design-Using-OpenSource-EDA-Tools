@@ -122,7 +122,7 @@ We check the layot of the design with resect to NMOS MOS and its connections wit
 Then we extract the ngsice netlist</br>
 We also extract all the parasitic capacitors</br>
 We also need to modify the spice deck file according to the gird value NMOS and PMOS definition in the vsdstdcelldesign/libs</br>
-Then to simulate the ngSPICE netlist</br>
+Then to simulate the ngSPICE netlist</br></br>
 Characterized the cell using 4 parameters </br>
 1. Rise time delay: Rise time of the Outut waveform from 20% to 80%
 2. Fall time delay: Fall time of the Outut Waveform from 80% to 20%
