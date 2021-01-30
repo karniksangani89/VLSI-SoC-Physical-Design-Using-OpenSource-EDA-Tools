@@ -115,7 +115,24 @@ Observation in Floorplan : </br>
 ![](Blogs4p-Rep/D213.jpg)
        
 
-Day3 : Design Library Cell using Magic Layout and ngSpice Characterization.
+**Day3 : Design Library Cell using Magic Layout and ngSpice Characterization:**
+
+In this lab we clone the CMOS Inverter from vsdstdcelldesign
+We check the layot of the design with resect to NMOS MOS and its connections with the metal layers.
+Then we extract teh ngsice netlist
+We also extract all the parasitic capacitors
+We also need to modify the spice deck file according to the gird value NMOS and PMOS definition in the vsdstdcelldesign/libs
+Then to simulate the ngSPICE netlist
+Characterized the cell using 4 parameters 
+1. Rise time delay: Rise time of the Outut waveform from 20% to 80%
+2. Fall time delay: Fall time of the Outut Waveform from 80% to 20%
+3. Fall Cell delay : It is difference between the time period the output falls to 50% and when input rise to 50%
+5. Rise Cell delay : It is difference between the time period the outut rise to 50% and when input falls to 50%
+
+Rise time delay | 0.06368nsec
+Fall Time delay | 0.42nsec
+Fall Cell delay | 0.028nsec
+Rise Cell delay | 0.06nsec
 
 Day4 : PreLayout Timing Analysis and Clock Tree Synthesis.
 
