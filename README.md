@@ -152,6 +152,8 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 
 **Day4 : PreLayout Timing Analysis and Clock Tree Synthesis:**
 
+**DAY4_LAB**
+
 1. We convert grid info into the track info
 2. To include the standard cell into the design we dont require PWR, GND, Port information, Logic part.
 3. The only information we require is inner boundary of the cell, PWR  GND and Inut and Output Port.
@@ -272,6 +274,34 @@ Thus for the Typical Corner both are meet.
 ![](Blogs4p-Rep/D409.jpg)
 ![](Blogs4p-Rep/D4000.jpg)
 
-Day5 : RTL2GDS using TritonRoute and OpenSTA
+**Day5 : RTL2GDS using TritonRoute and OpenSTA**
+
+**DAY5_LAB**
+
+Power Distribution network is built and Routing is carried out</br>
+gen_pdn</br>
+Identify the roting strategy </br>
+run_routing</br>
+Number of Violations is 3</br>
+Now to run Post routing STA  1st goal is to extract the parasitics</br>
+Once the paratics are extracted, run the post STA.
+
+**Limitations**
+
+At present, Openlane has following limitations:</br>
+
+Limited Timing Constraints.</br>
+Timing Closure.</br>
+No post-routing optimization</br>
+
+**Acknowledgements**
+
+Kunal Ghosh, Co-founder (VSD Corp. Pvt. Ltd)</br>
+Nickson Jose ( VSD Team )</br>
+And Entire VSD Team  Thanks for all the support</br>
+
+
+
+
 
 
