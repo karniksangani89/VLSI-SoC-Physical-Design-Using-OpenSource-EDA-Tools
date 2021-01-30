@@ -59,10 +59,10 @@ Below is the simplified RTL to GDSII flow
   
   **DAY1_LAB** 
   * OpenLANE directory structure in detail.
-  * Design preparation step using following commands
-    ./flow.tcl -interactive : which opens OPENLANE
-    package require openlane 0.9
-    prep -design picorv32a
+  * Design preparation step using following commands</br>
+    ./flow.tcl -interactive : which opens OPENLANE</br>
+    package require openlane 0.9</br>
+    prep -design picorv32a</br>
   
   ![](Blogs4p-Rep/D11.jpg)
   ![](Blogs4p-Rep/D12.jpg)
