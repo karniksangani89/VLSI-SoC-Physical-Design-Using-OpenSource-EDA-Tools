@@ -38,6 +38,10 @@ Place and Route (PnR) is the core of any ASIC implementation and Openlane flow i
 * GDSII Generation
    *Streaming out the final GDSII layout file from the routed def (Magic).
 
+Below is the simplified RTL to GDSII flow 
+
+![](Blogs4p-Rep/RTL2GDS.jpg)
+
 
 
 
