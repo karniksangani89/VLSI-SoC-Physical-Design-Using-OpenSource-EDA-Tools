@@ -15,6 +15,10 @@ It is collection of files used to model a fabrication rocess for EDA Tools used 
 Currently we will be using Google + Skywater Technology based OpenSorce PDK know as Sky130 PDK
 Also we will be using OpenSource tool known as OpenLANE which is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, Fault, OpenPhySyn, SPEF-Extractor and custom methodology scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
+![](Blogs4p-Rep/OpenLane flow.jpg)
+
+
+
 
 
 
