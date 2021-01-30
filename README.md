@@ -2,7 +2,7 @@
 
 Day1 : Inception of Open Source EDA, OpenLANE and SKY130 PDK :
 
-                                                                 ![](Blogs4p-Rep/Soc.jpg)
+![](Blogs4p-Rep/Soc.jpg)
 
 
 Day2 : Floorplan and Library Cells
