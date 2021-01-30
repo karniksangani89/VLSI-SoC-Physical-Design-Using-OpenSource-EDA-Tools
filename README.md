@@ -51,6 +51,12 @@ Below is the simplified RTL to GDSII flow
 * Clock Tree Sysnthesis (CTS) : Create a clock distribution network to deliver the clock to all sequential elements with minimum skew.
 * Routing : Implement the interconnect using available metal layer. Usually done in 2 steps Global Routing and Detailed Routing.
 * Sign-off : Physical Verification is carried out sing DRC ( Deisgn Rule Check ) and LVS (Layot verus Schematic ) Check  during this timing verification STA Static Timing Analayis is also carried out.
+
+**openLANE**
+  * Started as Open Source automated RTL to GDSII flow for a True Open Source Tape Out Experience.
+  * Main Goal is to produce clean GDSII with no hman intervention.
+  * Tuned for Skywater 130nm Open PDK.
+  
             
 
 
