@@ -211,7 +211,35 @@ Slack | tns (total negative slack) | wns (worst negative slack)|
 |:---:|:---:|:---:|
 |-3.76|-96.76|-3.76|
 
-15.
+15. After Sythensis again we erforme is pre STA</br>
+PnR is iterative flow were we try to redce the slack to Zero or positive value.</br>
+So after scaling the we get follwoing Slack</br>
+
+Slack | tns (total negative slack) | wns (worst negative slack)|
+|:---:|:---:|:---:|
+|-2.5175|-72.97|-2.52|
+
+16. Now we want these modifications to be reflected to the Netlist</br>
+write the verilog file </br>
+We should run the synthesis again as we have changed the netlist</br>
+run_floorlan</br>
+run_placement</br>
+
+17. Now net ste is CTS kindly check the switch varaible and the run_cts</br>
+In CTS clock buffers gets added so that modifies the netlist.
+
+18. Perform Timing analysis using OpenSTA </br>
+OpenRoad</br>
+Create DB read lef and def files and rhen write and read DB file</br>
+Read MIN and MAX liberary </br>
+We can observe following Setp Time and Hold Time</br>
+
+Setup Slack | Hold Slack | 
+|:---:|:---:|
+|-3.6287|-1.196|
+
+
+
 
 
 
