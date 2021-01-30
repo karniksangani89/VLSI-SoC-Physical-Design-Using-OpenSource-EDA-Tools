@@ -166,10 +166,16 @@ Rise time delay | Fall time delay | Fall Cell delay | Rise Cell delay |
 10.Now extract the LEF file and plug this file the the design file.
 11. In the Openlane Flow we need to include our custom cell and 1st stage in OpenLane is snythesis the ABC flo of the synthesis mst ma the netlist to the cells int he library so we need to have the libray which our cell definition for synthesis.
 12. Before synthesis add and merge the LEF files
-./flow.tcl -interactive
-package require openlane 0.9
-prep -design picorv32a  -tay Day2 -overwrite
-set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+./flow.tcl -interactive</br>
+package require openlane 0.9</br>
+prep -design picorv32a  -tay Day2 -overwrite</br>
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]</br>
+add_lefs -src $lefs</br>
+run_sythesis</br>
+Once we run the synthesis we can observe the huge slack</br>>
+Slack | tns totla negative slack) | wns (worst negative slack)|
+|:---:|:---:|:---:|
+|-17.96|-2593.43|-17.96|
 
 
 
